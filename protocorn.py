@@ -31,6 +31,10 @@ else:
 		''' Set a single pixel to RGB colour '''
 		matrix[x][y][1] = (r,g,b)
 
+	def get_pixel(x,y):
+		''' Get the RGB value of a single pixel '''
+		return matrix[x][y][1]
+
 	def show():
 		''' Update UnicornHat with the contents of the display buffer '''
 		for row in matrix:
@@ -57,10 +61,11 @@ else:
 	######## Non-implemented functions ########
 
 	def brightness(brightness): print "brightness(): Not implemented yet, sorry!"
-	def rotation(rotation): print "rotation(): Not implemented yet, sorry!"
 	def get_brightness(x): print "get_brightness(): Not implemented yet, sorry!"
+	def rotation(rotation): print "rotation(): Not implemented yet, sorry!"
+
 	def get_index_from_xy(x): print "get_index_from_xy(): Not implemented yet, sorry!"
-	def get_pixel(x): print "get_pixel(): Not implemented yet, sorry!"
+
 	def set_pixels(x): print "set_pixels(): Not implemented yet, sorry!"
 	def get_pixels(x): print "get_pixels(): Not implemented yet, sorry!"
 

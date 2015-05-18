@@ -1,4 +1,4 @@
-# Protocorn
+![Protocorn](protocorn_logo.png)
 
 Protocorn allows you to test Unicorn HAT projects on your Windows, Mac, or Linux computer without needing a Raspberry Pi *or* a Unicorn HAT on hand. Perfect for sneaky lunch-break dev sessions or the poor few without a diffuser over their HAT.
 
@@ -13,6 +13,7 @@ I wish I could tell you how I got it working on my Mac, but I'd be lying if I sa
 Currently Protocorn covers the following functions from the official `unicornhat` module:
 
  * `set_pixel()`
+ * `get_pixel()`
  * `show()`
  * `clear()`
  * `off()`
