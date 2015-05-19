@@ -7,18 +7,20 @@ else:
 	import pygame
 	from pygame.locals import *
 
-	factor        = 20
-	size          = 8*factor
+	factor = 20
+	size   = 8*factor
 
 	pygame.init()
 	pygame.display.set_caption('🐴')
 	DISPLAYSURF = pygame.display.set_mode(((size-2), (size-2)))
-	DISPLAYSURF.fill((20,20,20))
+	DISPLAYSURF.fill((30,30,30))
+
+	matrix = []  # Where the array of pixels will be kept and changed
+	rotation_amount = 0 # How many degrees the "HAT" is rotated by. For future stuff.
 
 	######## Build pixel matrix ########
 	# The "LEDs" are stored in a 2D list, with each index containing a pygame.Rect() object and a colour tuple.
 	# Referencing matrix[1][3] will pull up the Rect() object (at [0]) and the colours (at [1]) of the "LED" at x1 y3 in a two-item list.
-	matrix = []
 	for x in range(0,size, factor):
 		temp_row = []
 		for y in range(0,(size), factor):
@@ -69,4 +71,5 @@ else:
 	def set_pixels(x): print "set_pixels(): Not implemented yet, sorry!"
 	def get_pixels(x): print "get_pixels(): Not implemented yet, sorry!"
 
-	show()
+	show() # Initialise the PyGame window with a blank grid.
+	       # Without this initial show(), the screen would be white until the first show() is called.
