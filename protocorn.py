@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
-	print '\nYou must import protocorn as a module.\nImport it by putting protocorn.py in the same directory as your Unicorn HAT project and using:\n\n\timport protocorn as unicornhat\n\nto temporarily replace all unicornhat functions with the protocorn equivalents.\n'
+	print('\nYou must import protocorn as a module.\nImport it by putting protocorn.py in the same directory as your Unicorn HAT project and using:\n\n\timport protocorn as unicornhat\n\nto temporarily replace all unicornhat functions with the protocorn equivalents.\n')
 
 else:
 	import pygame
@@ -58,18 +58,18 @@ else:
 	def _matrix():
 		''' Print out the matrix of "pixels". For my own personal testing. Not to be shipped. '''
 		for row in matrix:
-			print row
+			print(row)
 
 	######## Non-implemented functions ########
 
-	def brightness(brightness): print "brightness(): Not implemented yet, sorry!"
-	def get_brightness(x): print "get_brightness(): Not implemented yet, sorry!"
-	def rotation(rotation): print "rotation(): Not implemented yet, sorry!"
+	def brightness(brightness): print("brightness(): Not implemented yet, sorry!")
+	def get_brightness(x): print("get_brightness(): Not implemented yet, sorry!")
+	def rotation(rotation): print("rotation(): Not implemented yet, sorry!")
 
-	def get_index_from_xy(x): print "get_index_from_xy(): Not implemented yet, sorry!"
+	def get_index_from_xy(x): print("get_index_from_xy(): Not implemented yet, sorry!")
 
-	def set_pixels(x): print "set_pixels(): Not implemented yet, sorry!"
-	def get_pixels(x): print "get_pixels(): Not implemented yet, sorry!"
+	def set_pixels(x): print("set_pixels(): Not implemented yet, sorry!")
+	def get_pixels(x): print("get_pixels(): Not implemented yet, sorry!")
 
 	show() # Initialise the PyGame window with a blank grid.
 	       # Without this initial show(), the screen would be white until the first show() is called.
