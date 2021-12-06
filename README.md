@@ -2,6 +2,8 @@
 
 Protocorn allows you to test Unicorn HAT projects on your Windows, Mac, or Linux computer without needing a Raspberry Pi *or* a Unicorn HAT on hand.
 
+## Preamble from future me
+
 This project was written when I was but a wee lass and Pimoroni had only created the original 8x8 Unicorn HAT. This was before the HAT Mini, the pHAT, and the HAT HD. Keep in mind that it's probably not going to work with a lot of the examples Pimoroni currently have in their GitHub repos and that some major tweaks will need to be done to Protocorn in order to get it back to being a drop-in replacement for the official `unicornhat` module. I might pick it back up when I have spare time. Who knows?
 
 The rest of the below is verbatim from when I originally started this project back in 2015.
